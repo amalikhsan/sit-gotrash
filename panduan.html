@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GoTrash - Jasa Pengambilan Sampah Online</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel='shortcut icon' type='image/ico' href='assets/icon/favicon.ico'>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top"
+    >
+      <div class="container-xl">
+        <a class="navbar-brand fs-2 fw-bold me-5" href="#"
+          ><span class="text-success">Go</span>Trash</a
+        >
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item me-5">
+              <a class="nav-link fs-new" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link fs-new" href="tentang.html">Tentang</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link fs-new active" href="panduan.html">Panduan</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link fs-new" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link fs-new" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+          <a class="btn btn-outline-success rounded-0 me-3" href="masuk.html"
+            >Masuk</a
+          >
+          <a class="btn btn-success rounded-0 me-3" href="daftar.html"
+            >Daftar</a
+          >
+          <button
+            class="btn border-0 rounded-0 shadow-none"
+            role="button"
+            onclick="makeDark()"
+            id="btn-light"
+          >
+            <i class="bi bi-brightness-high fs-5"></i>
+          </button>
+          <button
+            class="btn border-0 rounded-0 shadow-none"
+            role="button"
+            onclick="makeLight()"
+            id="btn-dark"
+          >
+            <i class="bi bi-moon-stars fs-5"></i>
+          </button>
+          <input hidden type="checkbox" role="switch" />
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-pattern">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-12 my-auto">
+            <div class="row align-items-center">
+              <div class="col-md-12">
+                <h1 class="display-1 fw-bold my-0"><span id="typed"></span></h1>
+                <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html" class="text-muted on-hover">GoTrash</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Panduan</li>
+                </ol>
+              </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-12 my-auto">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card text-center border-0 rounded-0 shadow-sm">
+                  <div class="card-body py-5">
+                    <i class="bi bi-cloud-arrow-down-fill display-1 text-muted on-hover"></i>
+                    <h4 class="fw-bold">Unduh <span class="text-success">Go</span>Trash</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card text-center border-0 rounded-0 shadow-sm">
+                  <div class="card-body py-5">
+                    <i class="bi bi-phone-vibrate-fill display-1 text-muted on-hover"></i>
+                    <h4 class="fw-bold">Pesan <span class="fw-bold"><span class="text-success">Go</span>Trash</span></h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card text-center border-0 rounded-0 shadow-sm">
+                  <div class="card-body py-5">
+                    <i class="bi bi-car-front-fill display-1 text-muted on-hover"></i>
+                    <h4 class="fw-bold">Datang <span class="fw-bold"><span class="text-success">Go</span>Trash</span></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <p class="text-center mb-0">Copyrights &copy; 2023 | Created by <a href="" class="navbar-brand fw-bold"><span class="text-success">Go</span>Trash</a>.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#typed", {
+        strings: ["Panduan Penggunaan."],
+        typeSpeed: 50,
+        cursorChar: '_',
+      });
+    </script>
+    <script>
+      const myTheme = document.querySelector("html");
+      const btnDark = document.getElementById("btn-dark");
+      const btnLight = document.getElementById("btn-light");
+      const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+
+      if (localStorage.getItem("theme") == "dark") {
+        btnDark.classList.remove("d-none");
+        btnLight.classList.add("d-none");
+        myTheme.setAttribute("data-bs-theme", "dark");
+        localStorage.setItem("theme", "dark");
+      } else {
+        btnLight.classList.remove("d-none");
+        btnDark.classList.add("d-none");
+        myTheme.setAttribute("data-bs-theme", "light");
+        localStorage.setItem("theme", "light");
+      }
+
+      if (!localStorage.getItem("theme")) {
+        if (darkThemeMq.matches) {
+          btnDark.classList.remove("d-none");
+          btnLight.classList.add("d-none");
+          myTheme.setAttribute("data-bs-theme", "dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          btnLight.classList.remove("d-none");
+          btnDark.classList.add("d-none");
+          myTheme.setAttribute("data-bs-theme", "light");
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      function makeDark() {
+        btnDark.style.opacity = 1;
+        btnLight.style.opacity = 0;
+
+        setTimeout(() => {
+          btnDark.classList.remove("d-none");
+          btnLight.classList.add("d-none");
+          myTheme.setAttribute("data-bs-theme", "dark");
+          localStorage.setItem("theme", "dark");
+        }, 200);
+      }
+
+      function makeLight() {
+        btnLight.style.opacity = 1;
+        btnDark.style.opacity = 0;
+
+        setTimeout(() => {
+          btnLight.classList.remove("d-none");
+          btnDark.classList.add("d-none");
+          myTheme.setAttribute("data-bs-theme", "light");
+          localStorage.setItem("theme", "light");
+        }, 200);
+      }
+    </script>
+  </body>
+</html>

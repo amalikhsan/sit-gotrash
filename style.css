@@ -1,0 +1,55 @@
+.fs-new{
+    font-size:1.2rem;
+}
+
+.fs-old{
+    font-size:0.8rem;
+}
+
+.nav-link.active{
+    font-weight:600;
+}
+
+#btn-dark, #btn-light {
+  transition: opacity 0.2s ease !important;
+}
+
+.d-none {
+  opacity: 0;
+  transition: opacity 0.2s ease !important;
+  pointer-events: none;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+.text-muted.on-hover:hover {
+  color: rgb(var(--bs-success-rgb))!important;
+}
+
+[data-bs-theme=dark] {
+  --bs-hover-bg:url('assets/img/dark.png') !important;
+}
+
+[data-bs-theme=light] {
+  --bs-hover-bg:url('assets/img/light.png') !important;
+}
+
+.bg-pattern{
+  background-image: var(--bs-hover-bg) !important;
+}
+
+.card-box:hover{
+    box-shadow: var(--bs-box-shadow)!important;
+}
